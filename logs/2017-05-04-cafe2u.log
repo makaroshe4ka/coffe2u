@@ -1,0 +1,18 @@
+2017-05-04 13:57:07.6854|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 13:57:07.6854|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 13:57:17.6837|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 13:57:17.6837|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 15:18:53.1607|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 15:18:58.1603|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 15:19:08.1601|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 16:08:13.4338|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-05-04 16:08:13.4338|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available

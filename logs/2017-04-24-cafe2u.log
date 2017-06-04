@@ -1,0 +1,20 @@
+2017-04-24 10:26:07.7512|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 10:26:07.7728|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 10:37:02.0146|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 10:37:02.0176|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 11:12:37.8458|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 11:12:37.8458|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 14:24:39.2665|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 14:24:44.2680|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 18:05:01.0483|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+2017-04-24 18:05:01.0483|ERROR|Microsoft.Owin.Host.HttpListener.OwinHttpListener|IOCompletionCallback
+System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available

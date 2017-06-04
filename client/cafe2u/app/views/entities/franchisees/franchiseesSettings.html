@@ -1,0 +1,196 @@
+﻿<div>
+    <h3 class="main-header" data-bind="text: headerName"></h3>
+</div>
+
+<div class="content-block">
+    <div class="edit-form">
+        <!-- ko if: isUpdateMode -->
+        <div class="info">
+            <button class="config-button btn-primary button btn-sm" data-bind="click: $root.addUser">Добавить пользователя</button>
+            <div data-bind="compose: { model: { template: tableUsersTemplate, models: users},view:'views/entities/templates/tableContentTemplate'  }"></div>
+            <button class="config-button btn-primary button btn-sm" data-bind="click: $root.addVehicle">Добавить транспорт</button>
+            <div data-bind="compose: { model: { template: tableVehiclesTemplate, models: vehicles},view:'views/entities/templates/tableContentTemplate'  }"></div>
+
+
+            <button class="config-button btn-primary button btn-sm" data-bind="click: $root.addCategory">Добавить категорию</button>
+            <div data-bind="compose: { model: { template: tableCategoriesTemplate, models: categories},view:'views/entities/templates/tableContentTemplate'}"></div>
+        </div>
+        <!-- /ko -->
+        <div class="form-group">
+            <label class="edit-label control-label">
+                Название
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <input type="text" data-bind="value:legalName" class="form-control edit-input" required placeholder="Название">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="edit-label control-label">
+                Номер в реестре бизнесов
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <input type="text" data-bind="value:abn" class="form-control edit-input" required placeholder="Номер в реестре бизнесов">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="edit-label control-label">
+                Номер налогового файла
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <input type="text" data-bind="value:tfn" class="form-control edit-input" required placeholder="Номер налогового файла">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="edit-label control-label">
+                Номер кода франчайзи
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <input type="text" data-bind="value:codeNumber" class="form-control edit-input" required placeholder="Номер кода франчайзи">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="edit-label control-label">
+                Cтатус
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <select data-bind="options:allStates, optionsText: 'typeName', value: selectedState" class="form-control select-input"></select>
+            </div>
+        </div>
+        <div>
+            <h4 class="pre-header">Сведения о владельце</h4>
+        </div>
+        <div class="form-group">
+            <label class="edit-label control-label">
+                Имя владельца
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <input type="text" data-bind="value:ownerFirstName" class="form-control edit-input" required placeholder="Имя владельца">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="edit-label control-label">
+                Фамилия владельца
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <input type="text" data-bind="value: ownerSurname" class="form-control edit-input" required placeholder="Фамилия владельца">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="edit-label control-label">
+                E-mail владельца
+                <span class="requiredAsterisk">Req</span>
+            </label>
+            <div>
+                <div class="custom-group">
+                    <input type="text" data-bind="value: ownerEmailAddress" class="form-control edit-input" required placeholder="E-mail владельца">
+                </div>
+            </div>
+            <div>
+                <h4 class="pre-header">Адрес Франчайзи</h4>
+            </div>
+
+            <div class="form-group">
+                <label class="edit-label control-label">
+                    Адрес
+                    <span class="requiredAsterisk">Req</span>
+                </label>
+                <div>
+                    <input type="text" data-bind="value: address" class="form-control edit-input" required placeholder="Адрес">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="edit-label control-label">
+                    Пригород
+                    <span class="requiredAsterisk">Req</span>
+                </label>
+                <div>
+                    <input type="text" data-bind="value: suburb" class="form-control edit-input" required placeholder="Пригород">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="edit-label control-label">
+                    Страна
+                    <span class="requiredAsterisk">Req</span>
+                </label>
+                <div>
+                    <input type="text" data-bind="value: country" class="form-control edit-input" required placeholder="Страна">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="edit-label control-label">
+                    Штат
+                    <span class="requiredAsterisk">Req</span>
+                </label>
+                <div>
+                    <input type="text" data-bind="value: state" class="form-control edit-input" required placeholder="Штат">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="edit-label control-label">
+                    Почтовый индекс
+                    <span class="requiredAsterisk">Req</span>
+                </label>
+                <div>
+                    <input type="text" data-bind="value: postCode" class="form-control edit-input" required placeholder="Почтовый индекс">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="edit-label control-label">
+                    Номер телефона
+                    <span class="requiredAsterisk">Req</span>
+                </label> <div class="custom-group">
+                    <input type="text" data-bind="value: phoneNumber" class="form-control edit-input" required placeholder="Номер телефона">
+                </div>
+                <div>
+                    <h4 class="pre-header">Налогообложение</h4>
+                </div>
+                <div class="table-content">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Активно</th>
+                                <th>Название</th>
+                                <th>Значение</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach: taxations">
+                            <tr>
+                                <td>
+                                    <input type="checkbox" data-bind="checked: isUsed">
+                                </td>
+                                <td>
+                                    <input type="text" data-bind="value: name,enable: isUsed" class="form-control" required placeholder="Name">
+                                </td>
+                                <td>
+                                    <input type="text" data-bind="value: value,enable: isUsed" class="form-control" required placeholder="Value">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-5">
+                    <button data-bind="click: save,enable: isValidModel" class="btn btn-primary save-form-button" title="Сохранить">
+                        Сохранить
+                    </button>
+                    <!--<a data-bind="click:$parent.onRemove.bind($parent)" class="btn btn-danger" title="Cancel">
+
+                    </a>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

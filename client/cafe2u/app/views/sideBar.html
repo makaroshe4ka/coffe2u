@@ -1,0 +1,27 @@
+﻿<div>
+    <div>
+        <h3 class="main-header" data-bind="text: currentTitle"></h3>
+    </div>
+    <div class="tabs-controls vertical-menu-block">
+        <div class="side-nav custom-side-nav fixed">
+            <div class="grey darken-4">
+                <div class="user">
+                    <div class="chip grey darken-3 white-text">
+                        <span aria-hidden="true"   data-bind="text: currentUser"></span>
+                        <button data-bind="click: logOut" type="button" class="link-button ">
+                            <span aria-hidden="true" class="fa fa-sign-out"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul data-bind="foreach: router.navigationModel">
+                <li>
+                    <a class="waves-effect" data-bind="attr: { href: hash }, css:{active: isActive}">
+                        <i data-bind="css: style"></i>
+                        <span data-bind="text: title"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

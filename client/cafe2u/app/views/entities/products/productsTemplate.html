@@ -1,0 +1,32 @@
+﻿<div class="row grid-row">
+    <div class="col-md-1">
+        <span data-bind="text: code"></span>
+    </div>
+    <div class="col-md-2">
+        <span data-bind="text: name"></span>
+    </div>
+    <div class="col-md-1">
+        <span data-bind="text:price1 + '$'"></span>
+    </div>
+    <div class="col-md-1">
+        <span data-bind="text:price2 + '$'"></span>
+    </div>
+    <div class="col-md-1">
+        <span data-bind="text:money"></span>
+    </div>
+    <div class="col-md-2">
+        <span data-bind="text: status.typeName,css: status.style"></span>
+    </div>
+    <div class="col-md-2">
+        <span data-bind="text:createdBy"></span>
+    </div>
+
+    <div class="col-md-2 buttons">
+        <a data-bind="click:$parent.onUpdate.bind($parent)" class="btn btn-primary" title="UPDATE">
+            <span>✎</span>
+        </a>
+        <a data-bind="click:$parent.onRemove.bind($parent)" class="btn btn-danger" title="DELETE">
+            <i class="glyphicon glyphicon-trash"></i>
+        </a>
+    </div>
+</div>
