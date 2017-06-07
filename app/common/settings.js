@@ -50,7 +50,8 @@ define(["require", "exports"], function (require, exports) {
         updateCategory: 'api/Category/Update',
         addGroup: 'api/Group/Add',
         deleteGroup: 'api/Group/Delete',
-        updateGroup: 'api/Group/Update'
+        updateGroup: 'api/Group/Update',
+        getMessages: 'api/messages/get'
     };
     exports.Settings = Settings;
 });

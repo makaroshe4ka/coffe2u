@@ -49,6 +49,8 @@
 
         addGroup: 'api/Group/Add',
         deleteGroup: 'api/Group/Delete',
-        updateGroup: 'api/Group/Update'
+        updateGroup: 'api/Group/Update',
+
+        getMessages: 'api/messages/get'
     }
 }

@@ -48,7 +48,7 @@ class Shell {
             { route: 'addfranchisee', title: 'Франшизы', moduleId: 'viewmodels/entities/franchisees/franchiseesSettings', style: '' },
             { route: 'vehicles', title: 'Транспорт', moduleId: 'viewmodels/entities/vehicles/vehicles', nav: true, style: 'fa fa-car' },
             { route: 'products', title: 'Продукты', moduleId: 'viewmodels/entities/products/products', nav: true, style: 'fa fa-shopping-cart' },
-            { route: 'vehicles', title: 'Сообщения', moduleId: 'viewmodels/entities/vehicles/vehicles', nav: true, style: 'fa fa-envelope' },
+            { route: 'adminMessages', title: 'Сообщения', moduleId: 'viewmodels/entities/messages/messages', nav: true, style: 'fa fa-envelope' },
             { route: 'help', title: 'Справка', moduleId: 'viewmodels/help/help', nav: true, style: 'fa fa-question' }
         ];
 
