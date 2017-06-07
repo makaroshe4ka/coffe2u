@@ -1,9 +1,0 @@
-﻿<div class="row" data-bind="foreach: headers">
-    <div data-bind="css : className,click:$parent.onSort.bind($parent)">
-        <span data-bind="text:title"></span>
-        <!--ko if: _.get($data, 'fieldName')-->
-        <span class="arrow-down" data-bind="visible: isSort,  css: {'arrow-down': isAsc() == false, 'arrow-up': isAsc() == true}"></span>
-        <!--/ko-->
-    </div>
-
-</div>
