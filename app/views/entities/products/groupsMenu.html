@@ -1,0 +1,24 @@
+﻿<div class="horizontal-menu">
+
+    <div class="franchiseeSelector">
+        <span>Категории франшиз:</span>
+        <select data-bind="foreach: groupFranchisee,value: selectedOption, event:{ change: changeFrahcnhisee }">
+            <optgroup data-bind="attr: { 'label': $data[0].franchiseeName },foreach: $data">
+                <option data-bind="text: name,value:$data"></option>
+            </optgroup>
+        </select>
+        <span data-bind="text: currentSelectedFranchisee"></span>
+    </div>
+    <ul data-bind="foreach: groups">
+        <li data-bind="css:{activeTab: active}">
+            <a data-bind="text: name,click: $parent.selectGroup.bind($parent)"></a>
+            <i data-bind="click: $parent.deleteGroup.bind($parent,$data)" class="drop fa fa-times-circle-o" aria-hidden="true"></i>
+        </li>
+    </ul>
+
+    <div class="plus-btn">
+        <input data-bind="value: groupName" class="inputA">
+        <button class="btn btn-primary" type="submit" data-bind="click: addGroup">Добавить</button>
+    </div>
+
+</div>

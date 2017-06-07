@@ -1,0 +1,9 @@
+﻿<tbody data-bind="foreach: models">
+    <tr>
+        <td data-bind="text: vehicleCode"></td>
+        <td data-bind="text: licensePlate"></td>
+        <td>
+            <span data-bind="text: status.typeName,css: status.style"></span>
+        </td>
+    </tr>
+</tbody>;

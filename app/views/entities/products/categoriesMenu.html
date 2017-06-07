@@ -1,0 +1,18 @@
+﻿<div class="horizontal-menu">
+    <ul data-bind="foreach: categories">
+        <li data-bind="click: $parent.selectTab.bind($parent),css:{activeTab: active}">
+            <a data-bind="text: name"></a>
+        </li>
+    </ul>
+
+
+    <div class="franchiseeSelector">
+        <span>Franchisee Products:</span>
+        <select data-bind="foreach: groupFranchisee,value: selectedOption, event:{ change: changeFrahcnhisee }">
+            <optgroup data-bind="attr: { 'label': $data[0].franchiseeName },foreach: $data">
+                <option data-bind="text: name,value:$data"></option>
+            </optgroup>
+        </select>
+        <span data-bind="text: currentSelectedFranchisee"></span>
+    </div>
+</div>

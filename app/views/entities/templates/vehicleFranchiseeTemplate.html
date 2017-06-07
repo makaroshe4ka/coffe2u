@@ -1,0 +1,12 @@
+﻿<tbody data-bind="foreach: models">
+    <tr>
+        <td data-bind="text: vehicleCode"></td>
+        <td data-bind="text: licensePlate"></td>
+        <td>
+            <span data-bind="text: status.typeName,css: status.style"></span>
+        </td>
+        <td>
+            <input data-bind="click: $parent.template.deleteByFranchisee" type="button" class="btn btn-primary btn-o btn-sm" value="Удалить " name="Удалить">
+        </td>
+    </tr>
+</tbody>;

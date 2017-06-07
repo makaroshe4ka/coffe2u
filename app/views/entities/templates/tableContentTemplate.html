@@ -1,0 +1,15 @@
+﻿<div>
+    <h4 class="table-header" data-bind="text: template.name"></h4>
+    <div class="table-responsive content">
+        <table class="table table-bordered table-hover" id="sample-table-1">
+            <thead>
+                <tr data-bind="foreach: template.headers">
+                    <th data-bind="text: $data"></th>
+                </tr>
+            </thead>
+            <!--ko compose: { view: template.contentTemplate, mode:'templated' }-->
+            
+            <!--/ko-->
+        </table>
+    </div>
+</div>
